@@ -1,0 +1,22 @@
+[Unit]
+Description=BoxyCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=boxycoin
+Group=boxycoin
+
+Type=forking
+PIDFile=/var/lib/boxycoind/boxycoind.pid
+ExecStart=/usr/bin/boxycoind -daemon -pid=/var/lib/boxycoind/boxycoind.pid \
+-conf=/etc/boxycoin/boxycoin.conf -datadir=/var/lib/boxycoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

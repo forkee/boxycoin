@@ -1,0 +1,27 @@
+# /etc/conf.d/boxycoind: config file for /etc/init.d/boxycoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/boxycoin/boxycoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/boxycoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/boxycoind.pid"
+
+# Where to write boxycoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/boxycoind"
+
+# User and group to own boxycoind process
+#BITCOIND_USER="boxycoin"
+#BITCOIND_GROUP="boxycoin"
+
+# Path to boxycoind executable
+#BITCOIND_BIN="/usr/bin/boxycoind"
+
+# Nice value to run boxycoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+

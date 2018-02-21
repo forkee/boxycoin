@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BoxyCoin
+Comment=BoxyCoin P2P Cryptocurrency
+Comment[fr]=BoxyCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BoxyCoin, eşten eşe kriptografik sanal para birimi
+Exec=boxycoin-qt %u
+Terminal=false
+Type=Application
+Icon=boxycoin128
+MimeType=x-scheme-handler/boxycoin;
+Categories=Office;Finance;
